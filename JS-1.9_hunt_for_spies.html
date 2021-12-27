@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chasse aux espions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header><h1>SETI partie 2</h1></header>
+  <main>
+    <section>
+      <h2>Brief</h2>
+      <p>Des documents viennent d’être dérobé, un espion est parmi nous!</p>
+      <p>Par chance, une caméra de surveillance a pu filmer la silhouette de l’espion avant qu’il ne disparaisse : </p> 
+      <ul>
+        <li><strong>C’est un homme, </strong></li>
+        <li><strong>de grande taille (1.80 ou plus)</strong> </li>
+        <li><strong>et qui a les yeux verts.</strong></li>
+      </ul>
+      <p>Vous devez développer <strong>une fonction</strong> qui permette de rechercher les personnes correspondantes
+      à la description ci dessus parmi la liste transmise.</p>
+      <p>Au final, vous devez avec <strong>une short list de 4 suspects</strong></p>
+      <p>&Agrave; la suite de cet énoncé, vous trouverez, sur la plateforme, les sources suivantes dans un fichier
+      téléchargeable.</p>
+      <dl>
+        <dt>DATA.JS</dt>
+        <dd>Le fichier “data.js” contient la liste des 100 personnes qui ont eu accès au bâtiment, avec leurs <em>contacts</em> qui ont pu être invités sur les lieux. 
+        <br>L’espion se trouve parmi elle. Les données sont structurées en JSON</dd>
+        <dt>CHASSE_AUX_ESPIONS.HTML</dt>
+        <dd>  Le fichier ou vous devez écrire le code nécessaire. 
+        </dd>
+      </dl>
+      <p>On affichera le résultat dans la page.</p>
+    </section>
+    <section>
+      <h2>Résultat</h2>
+    <h3>Liste des suspects 
+      <!-- <button id="show-hide-btn">Afficher|Masquer</button> -->
+      <a href="http://wikipedia.fr" id="show-hide-btn">Afficher/masquer</a>
+    </h3>
+      <ul id="result"></ul>
+    </section>
+  </main>
+  <aside>
+    <h4>Conseils</h4>
+    <ol>
+      <li>Lisez bien toutes les informations et fichiers transmis</li>
+      <li>Utilisez le serveur local “live-server” pour tester l’exercice</li>
+      <li>Notez bien la structure du JSON pour pouvoir le parcourir dans sa totalité.</li>
+    </ol>
+  </aside>
+  <footer><small>Explications d'Amandine</small></footer>
+
+  <script src="JS-1.9/JS-1.9_data.js"></script>
+  <!-- <script src="JS-1.9/JS-1.9_hunt_for_spies-0.js"></script> -->
+  <!-- <script src="JS-1.9/JS-1.9_hunt_for_spies-1.js"></script> -->
+  <!-- <script src="JS-1.9/JS-1.9_hunt_for_spies-2.js"></script> -->
+  <!-- <script src="JS-1.9/JS-1.9_hunt_for_spies-3.js"></script> -->
+  <script src="JS-1.9/JS-1.9_hunt_for_spies-4.js"></script>
+</body>
+
+</html>
