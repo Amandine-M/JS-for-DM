@@ -18,34 +18,3 @@ function isTheSameArray(arr1, arr2) {
 function deleteDatas ( targetedArray, datasToDelete ) {
     return targetedArray.splice(datasToDelete.start, datasToDelete.deleteCount);
 }
-
-
-
-/**
- * Check if field is empty
- * @param {string} field - The field to check.
- * @return {boolean}
- */
- function isEmpty(field){
-	if(field != '') return false;
-	return true;
-}
-
-/**
- * Check if email is valid
- * @param {string} email - The email to check.
- * @return {boolean}
- */
-function isMailValid(email){
-	// est-ce que le champ est vide
-	if( isEmpty(email) ) {
-		// ce n'est pas un mail valide car il est vide
-		return false;
-	}
-	// est-ce qu'il y a une @ 
-	if(email.indexOf("@") == -1){
-		return false;
-	}
-	// est-ce qu'il y a un point après l'arobase
-	return true;
-}

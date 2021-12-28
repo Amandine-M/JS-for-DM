@@ -1,60 +1,60 @@
-/** SORT datas
- * 
+/** Tri des données
  */
-
 antennes = antennes.sort();
 
 
-/** CONTAIN 24
- * 
+/** 
+ * Contient le nombre 24
+ * 24 à la fin
  */
 let isContaining24 = [],
    isContaining24atTheEnd = [],
-   hasSum61 = [];
+   preparedValuesForSum61 = [];
 
 for (value of antennes) {
-
     if (value.toString().match(/24/)) { 
        isContaining24.push(value);
     }
     if (value.toString().match(/24$/)) { 
         isContaining24atTheEnd.push(value);
-        value = value.toString().replace(".","");
-        value = value.toString().replace("-","");
-        hasSum61.push(parseInt(value));
      }
 }
 
+/* Séquence dont la somme des chiffres vaut 61
+*  A partir du dernier tableau de résultats
+*  Supprimer le . et le -
+*  Additionner chaque nombre de chaque entrée
+*/
 
-// une séquence dont la somme des chiffres vaut 61 
-// supprimer le . et le -
-// convertir chaque caractère en nombres 
-// for (number of isContaining24atTheEnd) {
-//     //transformer la chaine en tableau et supprimer le . et le -
-    
-//     // additionner
-// }
+for ( sequence of isContaining24atTheEnd ) {
+   nb = sequence.toString().replace(".","");
+   nb = nb.toString().replace("-","");
+   nb = nb.toString().split("");
+   // console.log(sumOfArr(nb));
+   if (sumOfArr(nb) == 61){
+      console.log(sequence);
+   }
+}
+
 
 // document.getElementById("result").innerHTML = myFunction();
-let stringOfNum,
-sumArr = [];
-let sum = 0;
-for (i = 0; i < hasSum61.length; i++) {
-   stringOfNum = hasSum61[i].toString().split(""); // suite de chiffre
 
 
-   for (j = 0; j <stringOfNum.length; j++) {
-      sum += stringOfNum[j];
-      if (j == stringOfNum.length - 1){
-         if (sum == 61) {
-            sumArr.push(sum);
-            console.log("va dormir");
-         }
-      }
+/** Add all entries of an array
+ * @param {array} arr - array of entries to add
+ * @returns {number} - sum of entries
+ */
+
+function sumOfArr(arr) {
+   let sum = 0;
+   for ( i = 0 ; i < arr.length; i++ ){
+      sum = sum + parseInt(arr[i]);
    }
-  
+   return sum;
 }
 
-while (j < stringOfNum.length){
-   j++;
-}
+/** Display results
+ * @param {string} id - id of HTML element where to display results
+ * @param {array} - datas to display
+ * @returns {}
+ */
