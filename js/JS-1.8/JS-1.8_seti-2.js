@@ -38,8 +38,7 @@ for ( sequence of isContaining24atTheEnd ) {
 }
 
 // AFFICHER
-fnDisplayDataAsAList('ordinate', antennes, 'green');
-fnDisplayDataAsAList('tests', isContaining24atTheEnd, 'orange');
-fnDisplayDataAsAList('final', hasSum61, 'red');
+fnDisplayDataAsAList('ordinate', antennes);
+// fnDisplayDataAsAList('tests', isContaining24atTheEnd, 'orange');
+// fnDisplayDataAsAList('final', hasSum61, 'red');
 
-// document.getElementById("result").innerHTML = myFunction();

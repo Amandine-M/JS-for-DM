@@ -1,3 +1,7 @@
+:root {
+    --primary-color: rgb(19, 16, 163);
+    --link-color: #fff;
+}
 body {
     height: 100vh;
     color: #333;
@@ -81,7 +85,7 @@ code {
     color: rgb(139, 71, 15);
 }
 
-#ordinate ul{
+#ordinate ul {
     display: grid;
     list-style: none;
     justify-content: space-between;
@@ -91,5 +95,23 @@ code {
     margin: 0;
     padding: 0;
     font-size: .6em;
+    line-height: 1;
+}
+
+button {
+    color: var(--link-color);
+    background-color: var(--primary-color);
+    font-size: .8em;
+    line-height: 1.5;
+    padding: .6em 1.3em .63em;
+    margin-left: 2em;
+    border-radius: 1.5em;
+    letter-spacing: .1em;
+    cursor: pointer;
+}
+
+button::before {
+    display: inline-block;
+    font-size: 1.5em;
     line-height: 1;
 }

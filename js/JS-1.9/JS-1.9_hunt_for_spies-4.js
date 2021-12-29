@@ -54,9 +54,11 @@ function fnShowHide(e) {
     if ( !hasBeenSeen ) {
         result.className = "visible";
         hasBeenSeen = true;
+        this.innerHTML = "Masquer";
     } else {
         result.removeAttribute('class');
         hasBeenSeen = false;
+        this.innerHTML = "Afficher";
     }
 }
 btn.addEventListener('click', fnShowHide, false);
