@@ -108,7 +108,7 @@ for (const [index,value] of antennes.entries()) {
 
 
 for( var i = 0; i < antennes.length; i++ ) {
-    if (  (antennes[i] > 0.63 ) && (antennes[i] < 0.69) ) {
+    if ( (antennes[i] > 0.63 ) && (antennes[i] < 0.69) ) {
     console.log("il reste une erreur à l'indice : " + i);
     }
 }

@@ -9,7 +9,8 @@ antennes = antennes.sort();
  */
 let isContaining24 = [],
    isContaining24atTheEnd = [],
-   preparedValuesForSum61 = [];
+   preparedValuesForSum61 = [],
+   hasSum61 = [];
 
 for (value of antennes) {
     if (value.toString().match(/24/)) { 
@@ -32,29 +33,13 @@ for ( sequence of isContaining24atTheEnd ) {
    nb = nb.toString().split("");
    // console.log(sumOfArr(nb));
    if (sumOfArr(nb) == 61){
-      console.log(sequence);
+      hasSum61 = [].concat(sequence);
    }
 }
 
+// AFFICHER
+fnDisplayDataAsAList('ordinate', antennes, 'green');
+fnDisplayDataAsAList('tests', isContaining24atTheEnd, 'orange');
+fnDisplayDataAsAList('final', hasSum61, 'red');
 
 // document.getElementById("result").innerHTML = myFunction();
-
-
-/** Add all entries of an array
- * @param {array} arr - array of entries to add
- * @returns {number} - sum of entries
- */
-
-function sumOfArr(arr) {
-   let sum = 0;
-   for ( i = 0 ; i < arr.length; i++ ){
-      sum = sum + parseInt(arr[i]);
-   }
-   return sum;
-}
-
-/** Display results
- * @param {string} id - id of HTML element where to display results
- * @param {array} - datas to display
- * @returns {}
- */

@@ -55,9 +55,8 @@ function fnShowHide(e) {
         result.className = "visible";
         hasBeenSeen = true;
     } else {
-        result.className = "";
+        result.removeAttribute('class');
         hasBeenSeen = false;
     }
-    
 }
 btn.addEventListener('click', fnShowHide, false);

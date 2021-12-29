@@ -1,5 +1,5 @@
 // SOLUTION en copiant les constantes autrement
-// référence : https://holycoders.com/javscript-copy-array/
+// Référence : https://holycoders.com/javscript-copy-array/
 
 let clone_1 = [...antenne_1],
 clone_2 = antenne_1.slice(),

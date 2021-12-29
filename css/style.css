@@ -64,12 +64,32 @@ code {
 #result:not(.visible) {
     height: 0;
     opacity: 0;
+    transition-delay: .1s;
 }
 
 .visible {
     height: auto;
     opacity: 1;
 }
-.visible li {
-    transition-delay: .1s;
+.green {
+    color: rgb(60, 196, 60);
+}
+.red {
+    color: rgb(66, 2, 2);
+}
+.orange {
+    color: rgb(139, 71, 15);
+}
+
+#ordinate ul{
+    display: grid;
+    list-style: none;
+    justify-content: space-between;
+    text-align: justify;
+    gap: 1em;
+    grid-template-columns: repeat(7,1fr);
+    margin: 0;
+    padding: 0;
+    font-size: .6em;
+    line-height: 1;
 }
